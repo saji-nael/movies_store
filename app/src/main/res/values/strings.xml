@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">movies_store</string>
+    <string-array name="Category">
+        <item>Action</item>
+        <item>Fantasy</item>
+        <item>Horror</item>
+        <item>Romance</item>
+        <item>Animation</item>
+
+    </string-array>
+</resources>

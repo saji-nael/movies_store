@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/fa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Movie Library"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#D32828"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Search By:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#D32828"
+        android:textSize="24dp" />
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:fadeScrollbars="true"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:onClick="btnSearchByCategory"
+            android:text="Category" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:onClick="btnSearchByTitle"
+            android:text="Title"
+
+            />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:onClick="btnSearchByYear"
+            android:text="Year"
+
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:fadeScrollbars="true"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/cat"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:dropDownWidth="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            android:spinnerMode="dropdown" />
+
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3B959191"
+            android:hint="Enter Title"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#EAE4E4"
+            android:layout_margin="5dp"/>
+
+
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3B959191"
+            android:hint="Enter Year"
+            android:text=""
+            android:textColor="#F1F0F0"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#F3E9E9"
+            android:layout_margin="5dp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="btnSearch"
+            android:text="Search"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="The Result"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3B959191"
+            android:editable="false"
+            android:textColor="#F8F7F7"
+            android:textColorHighlight="#B5B3B3"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#F6F6F6"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
